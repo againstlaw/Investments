@@ -57,7 +57,6 @@ summary(m4)
 summary(m5)
 
 
-
 # Yearly return
 Microsoft.avg.Annual = mean(weeklyReturn(Ad(MSFT)))*52
 Intel.avg.Annual = mean(weeklyReturn(Ad(INTC)))*52
