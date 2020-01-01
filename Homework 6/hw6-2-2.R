@@ -9,7 +9,7 @@ mysoln = list(student = c("Georgios Terzakis", "Yue Yu", "Xiaoqing Lu", "Chong C
 # Get stock data from Yahoo Finance.
 # Intel and Microsoft (12/29/1989 - 9/28/2018)
 
-#install.packages("quantmod")
+install.packages("quantmod")
 
 library(quantmod)
 
