@@ -76,4 +76,4 @@ ax.set_ylabel('Normalized Price', fontsize=12)
 ax.grid(True, axis='y', linestyle='dotted')
 ax.set_title('Normalized Stock Price', fontsize=16)
 
-
+# daily stock price
