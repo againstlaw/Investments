@@ -1,9 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Jan 18 23:03:19 2020
 
-@author: Jason
-"""
 
 import pandas as pd
 import pandas_datareader.data as web
