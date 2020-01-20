@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Jan 19 15:20:43 2020
-
-@author: Jason
-"""
 
 
 import pandas as pd
@@ -63,7 +57,7 @@ print(ret_Weekly.mean())
 print(ret_Weekly.std())
 
 
-
+"""
 # weekly returns
 offset = pd.offsets.timedelta(days=-2)
 newPrice = Price.resample('W', loffset=offset).last()
@@ -73,16 +67,6 @@ r_Weekly = newPrice.pct_change()
 print(r_Weekly.mean())
 
 print(r_Weekly.std())
-
-
-
-
-"""
-Date=Price.index
-
-Date[0].weekday()
-Date[0].strftime('%A')
-
 """
 
 
