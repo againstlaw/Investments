@@ -1,5 +1,4 @@
 
-
 import pandas as pd
 import pandas_datareader.data as web
 import numpy as np
@@ -7,7 +6,6 @@ import scipy as sp
 import matplotlib.pyplot as plt
 from datetime import datetime
 import xlrd
-
 
 
 # Load data
@@ -160,7 +158,6 @@ Sigma_opt = myw*TangentSigma
 Utility = R_opt-A/2*Sigma_opt**2
 
 
-
 # Capital Allocation Line (CAL)
 sig_max = 0.06
 sig_min = 0.00
@@ -182,8 +179,6 @@ plt.title('Efficient Frontier', fontsize=16)
 plt.xlabel('Risk', fontsize=12)
 plt.ylabel('Weekly return', fontsize=12)
 plt.grid(True, axis='both')
-
-
 
 
 
