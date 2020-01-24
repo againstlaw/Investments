@@ -1,9 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Jan 23 02:26:56 2020
 
-@author: Jason
-"""
 
 import numpy as np
 import pandas as pd
@@ -137,27 +132,6 @@ print(Arithmetric_avg_Five_Yearly)
 Geometric_avg_Five_Yearly = (1+ret_Five_Yearly).prod()**(1/5/len(ret_Five_Yearly))-1
 print(Geometric_avg_Five_Yearly)
 
-
-
-
-"""
-
-fig=plt.figure()
-ax1=plt.subplot(311)
-ax2=plt.subplot(312)
-ax3=plt.subplot(313)
-
-
-ax1.plot(ret, color='k', lw=2, label='daily')
-ax1.set_title('Daily returns', fontsize=12)
-
-ax2.plot(ret_Monthly, color='r', lw=2, label='monthly')
-ax2.set_title('Monthly returns', fontsize=12)
-
-ax3.plot(ret_Yearly, color='b', lw=2, label='yearly')
-ax3.set_title('Yearly returns', fontsize=12)
-
-"""
 
 
 fig, axes = plt.subplots(3,1, figsize=(10,7), sharex=True)
