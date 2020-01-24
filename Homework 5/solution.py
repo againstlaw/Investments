@@ -61,7 +61,7 @@ ret_Five_Yearly = Price_Five_Yearly.pct_change()
 
 
 
-def ArithmetricAnnual(returns,period):
+def ArithmeticAnnual(returns,period):
     returns = returns.dropna()
     if period=='day':
         return returns.mean()*252
@@ -95,8 +95,8 @@ def GeometricAnnual(returns,period):
 
 print("Daily returns:")
 
-Arithmetric_avg = ArithmetricAnnual(ret,'day')
-print(Arithmetric_avg)
+Arithmetic_avg = ArithmeticAnnual(ret,'day')
+print(Arithmetic_avg)
 
 
 Geometric_avg = GeometricAnnual(ret,'day')
@@ -105,8 +105,8 @@ print(Geometric_avg)
 
 print("Monthly returns:")
 
-Arithmetric_avg_Monthly = ArithmetricAnnual(ret_Monthly,'month')
-print(Arithmetric_avg_Monthly)
+Arithmetic_avg_Monthly = ArithmeticAnnual(ret_Monthly,'month')
+print(Arithmetic_avg_Monthly)
 
 
 Geometric_avg_Monthly = GeometricAnnual(ret_Monthly,'month')
@@ -115,8 +115,8 @@ print(Geometric_avg_Monthly)
 
 print("Yearly returns:")
 
-Arithmetric_avg_Yearly = ArithmetricAnnual(ret_Yearly,'year')
-print(Arithmetric_avg_Yearly)
+Arithmetic_avg_Yearly = ArithmeticAnnual(ret_Yearly,'year')
+print(Arithmetic_avg_Yearly)
 
 
 Geometric_avg_Yearly = GeometricAnnual(ret_Yearly,'year')
@@ -125,8 +125,8 @@ print(Geometric_avg_Yearly)
 
 print("Five-Yearly returns:")
 
-Arithmetric_avg_Five_Yearly = ret_Five_Yearly.mean()/5
-print(Arithmetric_avg_Five_Yearly)
+Arithmetic_avg_Five_Yearly = ret_Five_Yearly.mean()/5
+print(Arithmetic_avg_Five_Yearly)
 
 
 Geometric_avg_Five_Yearly = (1+ret_Five_Yearly).prod()**(1/5/len(ret_Five_Yearly))-1
