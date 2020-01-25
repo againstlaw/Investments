@@ -268,3 +268,4 @@ mysoln[["Q4"]] =  list(a=a, b=b) #c and d in writeup
 
 # return my solution
 mysoln
+
