@@ -39,6 +39,8 @@ IRR = uniroot(f, c(-0.7, 1), tol=0.0001)
 IRR$root
 
 
+
+
 # To plot the graph
 
 plot(r, PV, type="l", col="red", lwd=3, xlab="r", ylab="PV", main="Negative IRR")
